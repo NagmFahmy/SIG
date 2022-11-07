@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class FileOperations {
     public static void LoadFileF(File file ,JTable InvoiceList) {
-        URL resource = MainFrame.class.getClassLoader().getResource("DB/SalesInvoice-db.csv");
+        URL resource = MainFrame.class.getClassLoader().getResource("InvoiceHeader.csv");
         if (resource == null) {
             throw new IllegalArgumentException("file not found!");
         } else {
@@ -39,7 +39,7 @@ public class FileOperations {
 
     public static void SaveItemsToCSV(JTable InvoiceList,JTable InvoiceDetailList,int index) {
         try {
-            URL resource = MainFrame.class.getClassLoader().getResource("DB/SalesInvoice-db.csv");
+            URL resource = MainFrame.class.getClassLoader().getResource("InvoiceHeader.csv");
             if (resource == null) {
                 throw new IllegalArgumentException("file not found!");
             } else {

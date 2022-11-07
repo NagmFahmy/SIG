@@ -75,7 +75,7 @@ public class MainFrame extends JFrame{
         LoadFile.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                URL resource = getClass().getClassLoader().getResource("DB/SalesInvoice-db.csv");
+                URL resource = getClass().getClassLoader().getResource("InvoiceHeader.csv");
                 if (resource == null) {
                     throw new IllegalArgumentException("file not found!");
                 } else {

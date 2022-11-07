@@ -5,34 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede20aee-d360-487c-8a81-782edcd71444" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/InvoiceLines.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/FileOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/FileOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DB/SalesInvoice-db.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/salesinvoiceapp/fileutils/FileUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/salesinvoiceapp/fileutils/LoadFromFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/salesinvoiceapp/mainJframe/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/salesinvoiceapp/mainJframe/MainFrame$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/salesinvoiceapp/mainJframe/MainFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/salesinvoiceapp/mainJframe/MainFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/salesinvoiceapp/mainJframe/MainFrame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/salesinvoiceapp/mainJframe/MainFrame$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/salesinvoiceapp/mainJframe/MainFrame$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/salesinvoiceapp/mainJframe/MainFrame$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/salesinvoiceapp/mainJframe/MainFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/DB/SalesInvoice-db.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/InvoiceHeader.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +53,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Afaqy-EG-LAP-140\Desktop\Udacity\SIG\src\main\java\view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Afaqy-EG-LAP-140\Desktop\Udacity\SIG\src\main\resources" />
     </key>
   </component>
   <component name="RunManager">
