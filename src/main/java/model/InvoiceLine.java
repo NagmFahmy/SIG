@@ -5,6 +5,18 @@ public class InvoiceLine {
     private Double itemPrice;
     private int count;
 
+    private InvoiceHeader invoice;
+
+    public InvoiceLine() {
+    }
+
+    public InvoiceLine(String item, double price, int count, InvoiceHeader invoice) {
+        this.itemName = item;
+        this.itemPrice = price;
+        this.count = count;
+        this.invoice = invoice;
+    }
+
     public String getItemName() {
         return itemName;
     }
@@ -29,5 +41,21 @@ public class InvoiceLine {
         this.count = count;
     }
 
+    public double getLineTotal() {
+        return itemPrice * count;
+    }
+
+    @Override
+    public String toString() {
+        return "Line{" + "num=" + invoice.getInvoiceNum() + ", item=" + itemName + ", price=" + itemPrice + ", count=" + count + '}';
+    }
+
+    public InvoiceHeader getInvoice() {
+        return invoice;
+    }
+
+    public String getAsCSV() {
+        return invoice.getInvoiceNum() + "," + itemName + "," + itemPrice + "," + count;
+    }
 
 }
