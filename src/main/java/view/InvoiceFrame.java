@@ -83,7 +83,7 @@ public class InvoiceFrame extends JFrame{
 
         createInvoiceButton = new JButton("Create New Invoice");
         createInvoiceButton.addActionListener(fileOperations);
-        deleteInvoiceButton = new JButton("Delete Selected Invoice");
+        deleteInvoiceButton = new JButton("Delete Invoice");
         deleteInvoiceButton.addActionListener(fileOperations);
         saveRecordButton = new JButton("Save Record");
         saveRecordButton.addActionListener(fileOperations);
