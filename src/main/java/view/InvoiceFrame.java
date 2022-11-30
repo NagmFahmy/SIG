@@ -4,6 +4,8 @@ import com.sun.tools.javac.Main;
 import controller.FileOperations;
 import model.InvoiceHeader;
 import model.InvoiceHeaderTable;
+import model.InvoiceLine;
+import model.InvoiceLineTable;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -54,7 +56,11 @@ public class InvoiceFrame extends JFrame{
     private JMenuItem loadFileMenuItem;
     private JMenuItem saveFileMenuItem;
     private ArrayList<InvoiceHeader> invoices;
+
+    private ArrayList<InvoiceLine> invoiceItems;
     private InvoiceHeaderTable invoicesTableModel;
+
+    private InvoiceLineTable invoiceLineTableModel;
 
     public InvoiceFrame(){
      initialize();
@@ -132,8 +138,6 @@ public class InvoiceFrame extends JFrame{
         invoiceNumField.setEditable(false);
         invoiceDateLabel = new JLabel("Invoice Date");
         invoiceDateField = new JTextField();
-//        invoiceDateField.setActionCommand("updateDate");
-//        invoiceDateField.addActionListener(fileOperations);
         customerNameLabel = new JLabel("Customer Name");
         customerNameField = new JTextField();
         invoiceTotalLabel = new JLabel("Total Amount");
@@ -197,6 +201,14 @@ public class InvoiceFrame extends JFrame{
         return invoices;
     }
 
+    public void setInvoicesItems(ArrayList<InvoiceLine> invoicesItems) {
+        this.invoiceItems = invoicesItems;
+    }
+    public ArrayList<InvoiceLine> getInvoiceItems() {
+        if (invoiceItems == null) invoiceItems = new ArrayList<>();
+        return invoiceItems;
+    }
+
     public void setInvoices(ArrayList<InvoiceHeader> invoices) {
         this.invoices = invoices;
     }
@@ -206,6 +218,12 @@ public class InvoiceFrame extends JFrame{
             invoicesTableModel = new InvoiceHeaderTable(getInvoices());
         }
         return invoicesTableModel;
+    }
+    public InvoiceLineTable getInvoicesLineTableModel() {
+        if (invoiceLineTableModel == null) {
+            invoiceLineTableModel = new InvoiceLineTable(getInvoiceItems());
+        }
+        return invoiceLineTableModel;
     }
 
     public void setInvoicesTableModel(InvoiceHeaderTable invoicesTableModel) {

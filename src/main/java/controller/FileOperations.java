@@ -213,6 +213,19 @@ public class FileOperations implements ActionListener, ListSelectionListener {
         if (selectedRow != -1) {
             frame.getInvoices().remove(selectedRow);
             frame.getInvoicesTableModel().fireTableDataChanged();
+            frame.getLineTable().setModel(new DefaultTableModel(
+                    new Object [][] {
+
+                    },
+                    new String [] {
+
+                    }
+            ));
+            frame.getCustomerNameField().setText("");
+            frame.getInvoiceNumField().setText("");
+            frame.getInvoiceDateField().setText("");
+            frame.getInvoiceTotalField().setText("");
+
         }
     }
 
